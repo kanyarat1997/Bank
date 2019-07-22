@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/animate.css">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
     <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
@@ -26,7 +25,8 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/uikit/uikit.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </head>
   <body>
@@ -63,7 +63,7 @@
                       </a>
                     </div>
                     
-                    <ul class="site-menu js-clone-nav d-none d-lg-block calpadding">
+                    <ul class="site-menu js-clone-nav d-none d-lg-block">
                       <li><a href="index.html">หน้าแรก</a></li>
                       <li><a href="index2.html">เกี่ยวกับโครงการ</a></li>
                       <li><a href="index3.html">โครงการวิจัย</a></li>
@@ -87,8 +87,7 @@
 
     <!-- เนื้อหาหน้าเว็ป -->
     <div class="site-section">
-        <div class="container">
-    
+      <div class="container">
           <div class="row">
             <div class="col-md-6 mx-auto text-center mb-5 section-heading">
               <h2 class="mb-5">กิจกรรม</h2>
@@ -123,131 +122,70 @@
               </div>
           
           </div>
+
+
+</div>
+        
+        <div class="site-section block-15">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+                <h2>กิจกรรม</h2>
+              </div>
+            </div>
     
-          <div class="row">
-            <div class="col-md-6 mx-auto text-center mt-5 section-heading">
-              <h2 class="mb-5">โครงการวิจัย</h2>
+            <div class="nonloop-block-15 owl-carousel" data-aos="fade-in" data-aos-delay="500">
+                <div class="media-with-text">
+                  <div class="mb-4">
+                    <a src="https://www.youtube.com/embed/AFYO_0BRLpA" class="popup-youtube image-play">
+                      <img src="images/img_1.jpg" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                  <h2 class="heading mb-0"><a href="#">การประชุมประจำเดือน</a></h2>
+                  <span class="mb-3 d-block post-date">20, 2018 &bullet; By <a href="#">admin</a></span>
+                  <p>ความแตกต่างของเงินได้พึงประเมินตามประมวลรัษฎากรที่เกี่ยวข้องกับแพทย์ ความสัมพันธ์ของ</p>
+                </div>
+              
+                <div class="media-with-text">
+                  <div class="mb-4">
+                    <a href="#">
+                      <img src="images/img_2.jpg" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                  <h2 class="heading mb-0"><a href="#">อบรมการใช้งาน</a></h2>
+                  <span class="mb-3 d-block post-date">20, 2018 &bullet; By <a href="#">admin</a></span>
+                  <p>หลักสูตรนี้ถูกออกแบบมาเพื่อให้พื้นฐานสำหรับการบริหารทรัพยากรมนุษย์ร่วมกับเครื่องมือในทางปฏิบัติ</p>
+                </div>
+              
+                <div class="media-with-text">
+                  <div class="mb-4">
+                    <a href="#">
+                      <img src="images/img_3.jpg" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                  <h2 class="heading mb-0"><a href="#">ตัวอย่างกิจกรรม</a></h2>
+                  <span class="mb-3 d-block post-date">20, 2018 &bullet; By <a href="#">admin</a></span>
+                  <p>เพื่อให้เกิดความเข้าใจความสำคัญของการสร้างความพึงพอใจให้แก่ลูกค้าตามที่ระบุไว้ในข้อกำหนดของ</p>
+                </div>
+
+                <div class="media-with-text">
+                    <div class="mb-4">
+                      <a href="#">
+                        <img src="images/IMG_1454.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <h2 class="heading mb-0"><a href="#">นำข้อมูลไปสอนให้กับน้อง</a></h2>
+                    <span class="mb-3 d-block post-date">20, 2018 &bullet; By <a href="#">admin</a></span>
+                    <p>เพื่อให้ผู้เข้ารับการอบรมได้ทราบหลักการและเทคนิคการจัดระบบและบริหารคลังสินค้าที่ดี เพื่อเป็นการลด</p>
+                  </div>
+              
+    
             </div>
           </div>
-    
-    
-          <div class="row">
-            <div class="col-md-4 mx-auto">
-                <div class="uk-card uk-card-default uk-card-body" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="uk-card-badge uk-label badgeEdit">ประเภท</div>
-                    <h3 class="uk-card-title">Title</h3>
-                    <p>เนื้อหาโครงการวิจัย</p>
-                </div>
-            </div>
-    
-            <div class="col-md-4 mx-auto">
-                <div class="uk-card uk-card-default uk-card-body"data-aos="zoom-in" data-aos-delay="500">
-                    <div class="uk-card-badge uk-label">ประเภท</div>
-                    <h3 class="uk-card-title">Title</h3>
-                    <p>เนื้อหาโครงการวิจัย</p>
-                </div>
-            </div>
-    
-            <div class="col-md-4 mx-auto">
-                <div class="uk-card uk-card-default uk-card-body"data-aos="zoom-in" data-aos-delay="900">
-                    <div class="uk-card-badge uk-label">ประเภท</div>
-                    <h3 class="uk-card-title">Title</h3>
-                    <p>เนื้อหาโครงการวิจัย</p>
-                </div>
-            </div>
-
-          </div>
-
-          <div class="row mt-5">
-              <div class="col-md-4 mx-auto">
-                  <div class="uk-card uk-card-default uk-card-body"data-aos="zoom-in" data-aos-delay="400">
-                      <div class="uk-card-badge uk-label badgeEdit">ประเภท</div>
-                      <h3 class="uk-card-title">Title</h3>
-                      <p>เนื้อหาโครงการวิจัย</p>
-                  </div>
-              </div>
-      
-              <div class="col-md-4 mx-auto">
-                  <div class="uk-card uk-card-default uk-card-body"data-aos="zoom-in" data-aos-delay="500">
-                      <div class="uk-card-badge uk-label">ประเภท</div>
-                      <h3 class="uk-card-title">Title</h3>
-                      <p>เนื้อหาโครงการวิจัย</p>
-                  </div>
-              </div>
-      
-              <div class="col-md-4 mx-auto">
-                  <div class="uk-card uk-card-default uk-card-body"data-aos="zoom-in" data-aos-delay="900">
-                      <div class="uk-card-badge uk-label">ประเภท</div>
-                      <h3 class="uk-card-title">Title</h3>
-                      <p>เนื้อหาโครงการวิจัย</p>
-                  </div>
-              </div>
-  
-            </div>
-          
-    
-    
-          <!-- <div class="site-section block-15">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-                    <h2>กิจกรรม</h2>
-                  </div>
-                </div>
-        
-                <div class="nonloop-block-15 owl-carousel" data-aos="fade-in" data-aos-delay="200" data-aos-duration="2000">
-                    <div class="media-with-text">
-                      <div class="mb-4">
-                        <a src="https://www.youtube.com/embed/AFYO_0BRLpA" class="popup-youtube image-play">
-                          <img src="images/img_1.jpg" alt="" class="img-fluid">
-                        </a>
-                      </div>
-                      <h2 class="heading mb-0"><a href="#">การประชุมประจำเดือน</a></h2>
-                      <span class="mb-3 d-block post-date">20, 2018 &bullet; By <a href="#">admin</a></span>
-                      <p>ความแตกต่างของเงินได้พึงประเมินตามประมวลรัษฎากรที่เกี่ยวข้องกับแพทย์ ความสัมพันธ์ของ</p>
-                    </div>
-                  
-                    <div class="media-with-text">
-                      <div class="mb-4">
-                        <a href="#">
-                          <img src="images/img_2.jpg" alt="" class="img-fluid">
-                        </a>
-                      </div>
-                      <h2 class="heading mb-0"><a href="#">อบรมการใช้งาน</a></h2>
-                      <span class="mb-3 d-block post-date">20, 2018 &bullet; By <a href="#">admin</a></span>
-                      <p>หลักสูตรนี้ถูกออกแบบมาเพื่อให้พื้นฐานสำหรับการบริหารทรัพยากรมนุษย์ร่วมกับเครื่องมือในทางปฏิบัติ</p>
-                    </div>
-                  
-                    <div class="media-with-text">
-                      <div class="mb-4">
-                        <a href="#">
-                          <img src="images/img_3.jpg" alt="" class="img-fluid">
-                        </a>
-                      </div>
-                      <h2 class="heading mb-0"><a href="#">ตัวอย่างกิจกรรม</a></h2>
-                      <span class="mb-3 d-block post-date">20, 2018 &bullet; By <a href="#">admin</a></span>
-                      <p>เพื่อให้เกิดความเข้าใจความสำคัญของการสร้างความพึงพอใจให้แก่ลูกค้าตามที่ระบุไว้ในข้อกำหนดของ</p>
-                    </div>
-    
-                    <div class="media-with-text">
-                        <div class="mb-4">
-                          <a href="#">
-                            <img src="images/IMG_1454.jpg" alt="" class="img-fluid">
-                          </a>
-                        </div>
-                        <h2 class="heading mb-0"><a href="#">นำข้อมูลไปสอนให้กับน้อง</a></h2>
-                        <span class="mb-3 d-block post-date">20, 2018 &bullet; By <a href="#">admin</a></span>
-                        <p>เพื่อให้ผู้เข้ารับการอบรมได้ทราบหลักการและเทคนิคการจัดระบบและบริหารคลังสินค้าที่ดี เพื่อเป็นการลด</p>
-                      </div>
-                  
-        
-                </div>
-              </div>
-            </div> -->
-    
-    
         </div>
-      </div>  
+
+      </div>
+    </div>    
 
     </div>
   </div>
@@ -290,10 +228,10 @@
               <div class="form-group">
 
                 <label for="recipient-name" class="col-form-label">ชื่อผู้ข้าใช้งาน:</label>
-                <input type="text" class="form-control" id=" ">
+                <input type="text" class="form-control" id="username">
 
                 <label for="recipient-name" class="col-form-label">รหัสผ่าน:</label>
-                <input type="Password" class="form-control" id=" ">
+                <input type="Password" class="form-control" id="password">
 
               </div>
             </form>
@@ -305,99 +243,9 @@
         </div>
       </div>
     </div>
-<!-- FORM LOGIN
 
-  <form action="index.html" class="login-form">
-    <h1>Login</h1>
 
-    <div class="txtb">
-      <input type="text">
-      <span data-placeholder="Username"></span>
-    </div>
 
-    <div class="txtb">
-      <input type="password">
-      <span data-placeholder="Password"></span>
-    </div>
-
-    <input type="submit" class="logbtn" value="Login">
-
-    <div class="bottom-text">
-      Don't have account? <a href="#">Sign up</a>
-    </div>
-
-  </form>
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">เพิ่มโครงการ</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-6">
-                                    <label for="recipient-name" class="col-form-label">ชื่อโครงการ:</label>
-                                    <input type="text" class="form-control" id=" ">
-                            </div>
-                            <div class="col-md-6">
-                                    <label for="recipient-name" class="col-form-label">ชื่อหัวหน้าทีมวิจัย:</label>
-                                    <input type="text" class="form-control" id=" ">
-                            </div>   
-                        </div>
-                        <div class="row">
-                                <div class="col-md-6">
-                                        <label for="recipient-name" class="col-form-label">ปีที่พิมพ์:</label>
-                                        <input type="text" class="form-control" id=" ">
-                                </div>
-                                <div class="col-md-6">
-                                        <label for="recipient-name" class="col-form-label">รหัสวิจัย สกว.:</label>
-                                        <input type="text" class="form-control" id=" ">
-                                </div>   
-                        </div>
-                      <label for="recipient-name" class="col-form-label">ปัญหาการวิจัย:</label>
-                      <input type="text" class="form-control" id=" ">
-
-                      <label for="recipient-name" class="col-form-label">วัตถุประสงค์:</label>
-                      <input type="text" class="form-control" id=" ">
-
-                      <label for="recipient-name" class="col-form-label">ผลการวิจัย:</label>
-                      <input type="text" class="form-control" id=" ">
-
-                      <label for="recipient-name" class="col-form-label">ผลการวิเคราะห์นำไปใช้ประโยชน์:</label>
-                      <input type="text" class="form-control" id=" ">
-
-                      <label for="recipient-name" class="col-form-label">สรุปผลจากการสนทนากลุ่ม:</label>
-                      <input type="text" class="form-control" id=" ">
-
-                      <label for="recipient-name" class="col-form-label">แกลอรี่ภาพกิจกรรม:</label>
-                        <div class="file-upload">
-                            <div class="file-select">
-                                <div class="file-select-button" id="fileName">Choose File</div>
-                                <div class="file-select-name" id="noFile">No file chosen...</div> 
-                                <input type="file" name="chooseFile" id="chooseFile">
-                            </div>
-                        </div>
-                      
-                      <label for="recipient-name" class="col-form-label">URL คลิปวีดีโอ:</label>
-                      <input type="text" class="form-control" id=" ">
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary" id="OKbuttom">Send message</button>
-                </div>
-              </div>
-            </div>
-          </div>
-  
--->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -411,11 +259,15 @@
   <script src="js/aos.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/mediaelement-and-player.min.js"></script>
 
   <script src="js/main.js"></script>
   <script src="js/animation.js"></script>
+  <!-- <script>
+    scroll = window.pageYOffset;
+    $("html, body").animate({
+      scrollTop: "500px" 
+    }, 2000);
+  </script> -->
+
   </body>
 </html>
-
-

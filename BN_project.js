@@ -25,8 +25,8 @@ $( document ).ready(function() {
             '<div class="col-md-4 mt-5">'+
                 '<div class="accordion" id="accordionExample">'+
                     '<div class="uk-card uk-card-default uk-card-body">'+
-                        '<a href="">'+
-                          '<div class="uk-card-badge uk-label">เปิดเอกสาร</div>'+
+                        '<a href="#">'+
+                          '<div class="uk-card-badge uk-label operdataproject">เปิดเอกสาร</div>'+
                         '</a>'+
                         '<h3 class="uk-card-title">'+data[i].name_project+'</h3>'+
                         '<p data-toggle="collapse" data-target="#collapse'+i+'" aria-expanded="true" aria-controls="collapse'+i+'"' +
@@ -40,9 +40,12 @@ $( document ).ready(function() {
                 '</div>'+
               '</div>'
             );
-            
-      }      
-      
-}
+            } 
+    }
+    
+    $(document).on("click", ".operdataproject", function () {
+        $('#exampleModalShowdata').modal('show');
+    });
+
 
 });
