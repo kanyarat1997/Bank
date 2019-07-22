@@ -1,4 +1,7 @@
 /* Base */
+html {
+  scroll-behavior: smooth;
+}
 body {
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.5);
@@ -1458,3 +1461,12 @@ a {
 .uk-card-default{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
 }
+
+.uk-card-title{
+  font-size: 1.0rem !important;
+}
+.uk-card-default .collapse p , .uk-card-default .collapsing p{
+  font-size: 17px;
+  font-weight: 200;
+}
+
