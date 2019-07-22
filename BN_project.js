@@ -15,6 +15,12 @@ $( document ).ready(function() {
 
     function fect_dataproject(data){
         for(var i = 0;i<data.length;i++){
+            var problem_project = "";
+            if(data[i].problem_project === null){
+                problem_project = "ไม่พบข้อมูล";
+            }else{
+                problem_project = data[i].problem_project;
+            }
           $('.tbodyproject').append(
             '<div class="col-md-4 mt-5">'+
                 '<div class="accordion" id="accordionExample">'+
@@ -28,7 +34,7 @@ $( document ).ready(function() {
                           'คลิกเพื่อดูรายละเอียด'+
                         '</p>'+
                         '<div id="collapse'+i+'" class="collapse" aria-labelledby="heading'+i+'" data-parent="#accordionExample">'+
-                            '<p>'+data[i].problem_project+'</p>'+
+                            '<p>'+problem_project+'</p>'+
                         '</div>'+
                     '</div>'+
                 '</div>'+
