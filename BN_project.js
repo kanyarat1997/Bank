@@ -21,15 +21,15 @@ $( document ).ready(function() {
             }else{
                 problem_project = data[i].problem_project;
             }
-          $('.tbodyproject').append(
-            '<div class="col-md-4 mt-5">'+
+          $('.tbodyproject1').append(
+            '<div class="col-md-12 mt-1">'+
                 '<div class="accordion" id="accordionExample">'+
                     '<div class="uk-card uk-card-default uk-card-body">'+
                         // '<a href="#">'+
                         //   '<div class="uk-card-badge uk-label operdataproject">เปิดเอกสาร</div>'+
                         // '</a>'+
                         '<h3 class="uk-card-title">'+data[i].name_project+'</h3>'+
-                        '<a target="_blank" rel="noopener noreferrer" href="">คลิกเพื่อดูรายละเอียด</a>'+
+                        '<a target="_blank" rel="noopener noreferrer" href="page_project.html">คลิกเพื่อดูรายละเอียด</a>'+
                         // '<p data-toggle="collapse" data-target="#collapse'+i+'" aria-expanded="true" aria-controls="collapse'+i+'"' +
                         //   'id="heading'+i+'">'+
                         //   'คลิกเพื่อดูรายละเอียด'+
@@ -41,7 +41,27 @@ $( document ).ready(function() {
                 '</div>'+
               '</div>'
             );
-            } 
+            $('.tbodyproject2').append(
+                '<div class="col-md-4 mt-5">'+
+                    '<div class="accordion" id="accordionExample">'+
+                        '<div class="uk-card uk-card-default uk-card-body">'+
+                            // '<a href="#">'+
+                            //   '<div class="uk-card-badge uk-label operdataproject">เปิดเอกสาร</div>'+
+                            // '</a>'+
+                            '<h3 class="uk-card-title">'+data[i].name_project+'</h3>'+
+                            '<a target="_blank" rel="noopener noreferrer" href="page_project.html">คลิกเพื่อดูรายละเอียด</a>'+
+                            // '<p data-toggle="collapse" data-target="#collapse'+i+'" aria-expanded="true" aria-controls="collapse'+i+'"' +
+                            //   'id="heading'+i+'">'+
+                            //   'คลิกเพื่อดูรายละเอียด'+
+                            // '</p>'+
+                            // '<div id="collapse'+i+'" class="collapse" aria-labelledby="heading'+i+'" data-parent="#accordionExample">'+
+                            //     '<p>'+problem_project+'</p>'+
+                            // '</div>'+
+                        '</div>'+
+                    '</div>'+
+                    '</div>'
+                );
+        } 
     }
     
     $(document).on("click", ".operdataproject", function () {
