@@ -22,7 +22,7 @@ $( document ).ready(function() {
                 problem_project = data[i].problem_project;
             }
           $('.tbodyproject1').append(
-            '<div class="col-md-12 mt-1">'+
+            '<div class="col-md-4 mt-2">'+
                 '<div class="accordion" id="accordionExample">'+
                     '<div class="uk-card uk-card-default uk-card-body">'+
                         // '<a href="#">'+
@@ -42,7 +42,7 @@ $( document ).ready(function() {
               '</div>'
             );
             $('.tbodyproject2').append(
-                '<div class="col-md-4 mt-5">'+
+                '<div class="col-md-4 mt-2">'+
                     '<div class="accordion" id="accordionExample">'+
                         '<div class="uk-card uk-card-default uk-card-body">'+
                             // '<a href="#">'+

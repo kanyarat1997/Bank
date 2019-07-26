@@ -1445,7 +1445,7 @@ a {
 }
 
 .imgeicon{
-  width: 12em;
+  width: 10em;
 }
 .imgeicon2{
   width: 8em;
@@ -1468,5 +1468,9 @@ a {
 .uk-card-default .collapse p , .uk-card-default .collapsing p{
   font-size: 17px;
   font-weight: 200;
+}
+.font18 p{
+  text-indent: 4ch;
+  font-size: 18px;
 }
 
