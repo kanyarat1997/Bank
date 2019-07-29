@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    
     $(document).on("click", ".loginbutton", function () {
         $('#exampleModal').modal('show');
     });
@@ -21,5 +20,11 @@ $(document).ready(function(){
         $("#video-view").html($title).append($iframe);
         $iframe.wrap("<div class='class-video'>");
     });
+
+
+    tippy('#myButton', {
+        content: "หนองปลาบึก",
+        theme: 'tomato'
+      })
 
 });

@@ -1473,4 +1473,32 @@ a {
   text-indent: 4ch;
   font-size: 18px;
 }
+.point1{
+  width: 3%;
+  position: relative;
+  top: 11%;
+  left: -15%;
+}
 
+.point2{
+  width: 3%;
+  position: relative;
+  top: 8%;
+  left: -26%;
+}
+
+.tippy-tooltip.tomato-theme {
+  font-size: 16px;
+  color: #000;
+  width: 500px;
+  height: 100px;
+  background-color:rgb(243, 243, 243);
+}
+
+.tippy-tooltip.tomato-theme[data-animatefill] {
+  background-color: transparent;
+}
+
+.tippy-tooltip.tomato-theme .tippy-backdrop {
+  background-color:rgb(243, 243, 243);
+}
