@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     Load_dataproject();
+    Load_dataproject1();
     function Load_dataproject() {
         $.ajax({
             type: "POST",
@@ -8,6 +9,18 @@ $( document ).ready(function() {
             dataType: 'json',
             success: function (data) {
                 fect_dataproject(data);
+            }
+        });
+    }
+
+    function Load_dataproject1() {
+        $.ajax({
+            type: "POST",
+            url: "get_all_TypeProject.php",
+            data: {},
+            dataType: 'json',
+            success: function (data) {
+                Load_datatypeProject(data);
             }
         });
     }
@@ -63,10 +76,20 @@ $( document ).ready(function() {
                 );
         } 
     }
-    
-    $(document).on("click", ".operdataproject", function () {
-        $('#exampleModalShowdata').modal('show');
-    });
+
+    function Load_datatypeProject(data) {
+        for(var i=0; i < data.length;i++){
+            $('.typeProjectBody').append(
+                '<div class="col-md-3 mx-auto text-center mb-3 mt-3 section-heading section-headingedit" data-aos="zoom-in" data-aos-delay="400">'+
+                  '<a href="#page1">'+
+                      '<img class="imgeicon" src="images/icon/leaf.png">'+
+                 ' </a>'+
+                 ' <h4 class="mb-3 mt-3">'+data[i].name_TypeProject+'</h4>'+
+                '</div>'
+            );
+        }
+        
+    }
 
 
 });

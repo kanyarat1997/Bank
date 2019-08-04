@@ -5,7 +5,7 @@ html {
 body {
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.5);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 15px;
   font-family: 'Kanit', sans-serif;
 }
@@ -1452,7 +1452,7 @@ a {
 }
 
 .owl-stage-outer{
-  height: 500px;
+  /* height: 500px; */
 }
 /* menubar */
 .calpadding{

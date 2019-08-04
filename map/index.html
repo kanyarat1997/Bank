@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>OneSchool &mdash; Website by Colorlib</title>
+    <title>สกว</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Work+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,7 +27,9 @@
     
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
+    
+      <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -44,52 +46,299 @@
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="index.html">OneSchool</a></div>
+          <div class="site-logo mr-auto w-25">
+              <img src="../images/sg_logo.jpg" alt="" style="width: 40px;">
+              <img src="../images/it_logo.png" alt="" style="width: 50px;">
+              <img src="../images/msu_loho.png" alt="" style="width: 50px;">
+          </div>
 
-          <div class="mx-auto text-center">
+          <div class="mx-auto text-center" id="top">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-                <li class="active"><a href="index.html">หน้าแรก</a></li>
-                <li><a href="index2.html">เกี่ยวกับโครงการ</a></li>
-                <li><a href="index3.html">โครงการวิจัย สกว.</a></li>
-                <li><a href="index4.html">กิจกรรม</a></li>
-                <li><a href="indexMedia.html">สื่องานวิจัย</a></li>
-                <li><a href="connect.html">ติดต่อเรา</a></li>
+                <li><a href="../index.html" class="nav-link">หน้าแรก</a></li>
+                <li><a href="../index2.html" class="nav-link">เกี่ยวกับโครงการ</a></li>
+                <li><a href="../index3.html" class="nav-link">โครงการวิจัย สกว.</a></li>
+                <li><a href="../index4.html" class="nav-link">กิจกรรม</a></li>
+                <li><a href="#teachers-section" class="nav-link">สื่อเผยแพร่</a></li>
+                <li><a href="../connect.html" class="nav-link">ติดต่อเรา</a></li>
               </ul>
             </nav>
+          </div>
+
+          <div class="ml-auto">
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
           </div>
         </div>
       </div>
       
     </header>
 
-    <div class="intro-section" id="home-section">
-      
-      <div class="slide-1" style="background-image: url(' ');" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12">
-              <div class="row align-items-center">
-                <div class="col-lg-6 mb-4">
-                
-                </div>
 
-                <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
-                  
+    <div class="site-section" id="teachers-section">
+      <div class="container mt-5">
 
-                </div>
-              </div>
-            </div>
-            
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-7 text-center">
+            <h2 class="section-title">แผนที่</h2>
           </div>
         </div>
+
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <div class="mapLogo">
+                  <a href="#map1"><img src="../images/icon/Media/maplogo1.png"></a>
+                </div>
+                <h5 class="mt-2">การท่องเที่ยวโดยชุมชนจังหวัดหนองคาย</h5>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="mapLogo">
+                  <a href="#map2"><img src="../images/icon/Media/maplogo2.png"></a>
+                </div>
+                <h5 class="mt-2">การท่องเที่ยวเมืองโบราณตำบลเวียงคุก</h5>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="mapLogo">
+                  <a href="#map3"><img src="../images/icon/Media/maplogo3.png"></a>
+                </div>
+                <h5 class="mt-2">การท่องเที่ยวโดยชุมชนจังหวัดขอนแก่น</h5>
+            </div>
+        </div>
+
       </div>
     </div>
 
 
+    <div class="site-section pb-0">
+      <div class="setpoint1">
+          <a href="#test1"><img class="point1" id="map1point7" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="200"></a>  
+          <a href="#test1"><img class="point2" id="map1point8" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="300"></a>  
+          <a href="#test1"><img class="point3" id="map1point6" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="400"></a>  
+          <a href="#test1"><img class="point4" id="map1point1" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="500"></a>  
+          <a href="#test1"><img class="point5" id="map1point4" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="600"></a>  
+          <a href="#test1"><img class="point6" id="map1point5" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="700"></a>  
+          <a href="#test1"><img class="point7" id="map1point3" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="800"></a>  
+          <a href="#test1"><img class="point8" id="map1point9" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="900"></a>  
+          <a href="#test1"><img class="point9" id="map1point2" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="1000"></a>  
+          <a href="#test1"><img class="point10" id="map1point10" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="1100"></a>  
+          <img id="map2" src="../images/icon/Media/map1.png" alt="Image" class="img-fluid">    
+      </div>
+    </div>
+
+    <div class="site-section" id=" ">
+        <div class="container mt-5">
+  
+          <div class="row mb-5 justify-content-center">
+            <div class="col-lg-10 text-center" id="test1">
+              <h1 class="">การท่องเที่ยวโดยชุมชนจังหวัดหนองคาย</h1>
+              <p class="">ตำบลบ้านม่วง อำเภอสังคม จังหวัดหนองคาย</p>
+            </div>
+          </div>
+          <hr>
+  
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-10 text-center">
+                <h4>1. วัดถ้ำเขาคีรีบรรพตเหมืองทองแดงโบราณ</h4>
+                  <p>
+                    ตำบลบ้านม่วงเคยเป็นที่อาศัยของคนในสมัยก่อน โดยพบเหมืองทองแดงโบราณแห่งแรกของประเทศไทย ตำนานเล่าสืบต่อกันว่าชาวบ้านเชียงซึ่งเป็นชุมชนโบราณอายุมากกว่า 5,000 ปี มีถิ่นฐานอยู่ที่อำเภอหนองหาน จังหวัดอุดรธานี ได้พากันมาขุดสินแร่ทองแดงที่ภูโล้นบ้านภูเขาทองตำบลบ้านม่วง อำเภอสังคม จังหวัดหนองคาย เพื่อนำไปถลุงที่บ้านโคกคอน อำเภอท่าบ่อ แล้วนำไปผลิตเป็นเครื่องใช้ในชุมชนบ้านเชียง ซึ่งนับได้ว่าเครื่องใช้ที่บ้านเชียงก็ล้วนนำแร่ มาจากบ้านภูเขาทอง พื้นที่บ้านภูเขาทองยังมีแร่ทองคำและแร่ทองแดง ปะป่นกันเป็นสายแร่ในพื้นที่ทั้งตำบล 
+                  </p>
+              </div>
+          </div>
+          <hr>
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-10 text-center">
+                <h4>2. วัดท่าสองคอน</h4>
+                  <p>
+                      เป็นวัดและโรงเรียนสมัยบรรพบุรุษ แต่ก่อนชาวบ้านได้ใช้วัดแห่งนี้ เป็นที่เรียนรู้ทางการศึกษาและการบวชเรียนในสมัยก่อน เป็นจุดชมบั้งไฟพญานาคที่แตกต่างจากที่อื่นๆ บั้งไฟพญานาคหรือปรากฏการณ์ดวงไฟที่เกิดจากธรรมชาติ จะเห็นมากที่สุดในช่วงวันเพ็ญ 15 ค่ำเดือน 11 วันออกพรรษา โดยเฉพาะอำเภอโพนพิสัย จังหวัดหนองคาย พบเห็นมากที่สุด แต่ยังมีอีกพื้นที่หนึ่ง ที่มีปรากฏการณ์ทางธรรมชาติเกิดขึ้นทุกๆปี ในลำแม่น้ำโขงท่าวัดท่าสองคอน ปรากฏการณ์ทางธรรมชาติในจุดนี้จะพบเห็นได้ เมื่อวันสิ้นปีของทุกปี
+                  </p>
+              </div>
+          </div>
+          <hr>
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-10 text-center">
+                <h4>3. จุดชมวิวทะเลหมอกภูห้วยอีสัน</h4>
+                  <p>
+                      เป็นพื้นที่เขาอยู่ในเขตป่าสงวนแห่งชาติเป็นที่ทำกินของชาวบ้านมาแต่ดั้งเดิมพื้นที่เป็นภูเขามีป่าต้นไม้เป็นแหล่งท่องเที่ยวในฤดูหนาว ภูห้วยอีสันมีที่มา มาจากคำนำหน้าของผู้หญิง ดิฉัน อีฉัน สำเนียงชาวบ้านพูดว่า อีสัน นานมาแล้วช่วงทหารออกมาวัดแนวเขตที่เขตป่าทหารได้ถามยายคนหนึ่งเป็นชาวบ้านม่วงที่ขึ้นไปทำกินอยู่บนเขาและพักอาศัยอยู่กินในไร่ฝ้าย ทหารถามยายคนนั้นว่ายายไร่นี้ใครเป็นเจ้าของและภูเขาลูกนี้มีชื่อว่าอย่างไร ยายจึงตอบด้วยความมั่นใจว่า(ไฮ่) หรือไร่ อีสันนี้ละคะ จากนั้นทหารจึงพากันคุยกันเล่นไปมาและก็แพร่หลาย จึงเป็นที่มาของชื่อภูลูกนี้ จากนั้นมาชาวบ้านจึงเรียกภูห้วยอีสันมาทุกวันนี้ภูห้วยอีสันไม่มีชื่อในแผนที่แต่มีชื่อภูเขาลูกนี้ว่าภูแซงทาง ทะเลหมอกภูห้วยอีสันเป็นพื้นที่ทำกินของชาวบ้านเดิมพื้นที่แห่งนี้เป็นสวนกล้วยน้ำว้า
+                  </p>
+              </div>
+          </div>
+          <hr>
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-10 text-center">
+                <h4>4. ทะเลหมอกภูผาดัก</h4>
+                  <p>
+                      เป็นแหล่งท่องเที่ยวอีกบริบทหนึ่งที่นักท่องเที่ยวที่ต้องการขึ้นไปชมความสวยงามตามธรรมชาติแต่จุดนี้จะต้องเดินเท้าอย่างเดียวเพราะภูผาดักมีความสูงลาดชันมากกว่าภูเขาทุกลูกในตำบลบ้านม่วง ทางขึ้นเป็นทางเดินเท้าไต่ระดับความสูงเลาะเรียบเขาขึ้นไปเรื่อยๆเหมะสำหรับผู้ที่ชอบการท้าทายผจญภัยหรือใครชอบการสัมผัสธรรมชาติโดยแท้ต้องมาจุดทะเลหมอกภูห้วยอีสันสามารถมาเที่ยวชมหมอกหนาวได้ตั้งแต่เดือนตุลาคมถึงเดือนมกราคมหรือปลายฝนต้นหนาวของทุกปีหรือใครต้องการขึ้นไปชมความสวยงามของพระอาทิตย์ขึ้นไปได้ทุกฤดูได้เลย
+                  </p>
+              </div>
+          </div>
+          <hr>
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-10 text-center">
+                <h4>5. ภูโล้น</h4>
+                  <p>
+                      เป็นภูเขาที่ไม่สูงมากนัก ลักษณะทั่วไปของภูโล้นเป็นภูเขาหัวโล้นมีเพียงต้นหญ้าเล็กๆ หรือชาวบ้านเรียกกันว่าหญ้ายุงขึ้นบนผิวภูเขา ไม่มีต้นไม้ใหญ่เกิดขึ้นเลยเนื่องจากภูเขาลูกนี้เป็นหินและแร่ต่างๆ เป็นภูเขาที่เชื่อมต่อเหมืองแร่ทองแดงบ้านภูเขาทอง วัดคีรีบรรพต แต่ก่อนเป็นเหมืองทองแดง เมื่อมีชาวบ้านเข้ามาอาศัยมากขึ้นเรื่อยๆชาวบ้านจึงใช้พื้นที่เหมืองทองแดงแห่งนี้ สร้างขึ้นให้เป็นวัดประจำหมู่บ้านหรือเรียกชื่อวัดว่าวัดคีรีบรรพต
+                  </p>
+              </div>
+          </div>
+          <hr>
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-10 text-center">
+                <h4>6. ทะเลหมอกภูหนอง</h4>
+                  <p>
+                      ภูหนองเป็นจุดท่องเที่ยวที่เพิ่งเริ่มเมื่อเดือนตุลาคม 2560 ซึ่งส่วนหนึ่งเป็นผลกระบวนการงานวิจัย เป็นจุดชมวิวอีกจุดที่มีความสวยงามอีกรูปแบบที่สามารถมองเห็นทัศนียภาพของเกาะกลางแม่น้ำโขงจนสุดสายตาอีกเป็นทะเลหมอกที่สวยงามอีกจุดหนึ่ง ทั้งยังมีถ้ำพญานาคหรือปล่องอากาศที่มีการเชื่อมลงสู่พื้นที่บาดาลสู่อ่างปลาบึก ตามคำเล่าของชาวบ้านหนองว่าถ้ำแห่งนี้เป็นทางเดินของงูใหญ่ที่เชื่อมอ่างปลาบึกกับยอดภูเขาและเป็นลักษณะคล้ายกับอ่างปลาบึกตำบลผาตั้ง ว่าถ้ามีอ่างปลาบึกต้องมีถ้ำใต้พื้นน้ำทะลุยอดเขา แต่คนไม่สามารถเข้าไปได้แต่มีข้อมูลว่ามีจริงเช่นอ่างปลาบึกบ้านผาตั้งมีถ้ำเชื่อมโยงไปถึงวัดถ้ำเพียงดิน อ่างปลาบึกหรือเรียกอีกอย่างว่าหนองปลาบึก ปัจจุบันไม่มีใครให้คำตอบได้ว่าเหตุไดปลาบึกไม่มีให้เห็นเลย ปีที่ผ่านมาแต่ยังเห็นว่าปลาบึกโดนระเบิดตายมีให้เห็น หรือเป็นเพราะว่าช่องระบายอากาศบนภูเขาอ่างปลาบึกโดนหินดินปิดปากทาง ทำให้ปลาบึกไม่มีในพื้นที่นี้ก็เป็นได้ 
+                  </p>
+              </div>
+          </div>
+          <hr>
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-10 text-center">
+                <h4>7. พันโขดแสนไคร้ (แกรนด์แคนยอนหนองคาย)</h4>
+                  <p>
+                      เป็นโขดหินที่เกิดขึ้นตามธรรมชาติ ในลำแม่น้ำโขง มีต้นไม้ทีโขดหินแลหาดทราย ชาวบ้านเขาเรียกกันมาตั้งแต่ปู่ย่าตายายว่าต้นไคร้ ต้นไคร้จะขึ้นตามเกาะแก่งกลางแม่น้ำโขงจำนวนหลายแสนต้นและสามารถทนต่อน้ำท่วม เกาะกลางน้ำหรือชาวบ้านเรียกกันว่าดอน คอน คก ยังเป็นแหล่งพื้นที่หากินของชาวบ้าน ในการจับปลาด้วยเครื่องมือต่างๆเช่นการดักตาข่ายปลาน้อยใหญ่ การลากกุ้ง การตักกระชอน (หรือชาวบ้านเรียกว่าตักต่อง)ในช่วงปลาขึ้นในเดือนกุมภาพันธ์ ปักเบ็ดคันเบ็ดเผือกใส่ลอบใส่จั่น พันโขดแสนไคร้ในแต่ละจุดจะมีความสวยงามแตกต่างกันไปบางโขดเป็นสภาพคล้ายสัตว์บางโขดหินมีสีที่เกิดขึ้นทางธรรมชาติ ปัจจุบันแหล่งท่องเที่ยวพันโขดแสนไคร้มีการเปลี่ยนแปลงทางด้านน้ำขึ้นน้ำลงสำหรับการนั่งเรือชมพันโขดแสนไคร้ที่ช่วงเวลาที่เหมาะสมอยู่ในช่วงเดือนมกราคมถึงเดือนพฤษภาคมของทุกปี
+                      โขดหินทุกโขดจะมีชื่อเรียกทุกโขด เช่น ก้อนแดง ก้อนข้าวจี่ ถ้ำเข้ ก้อนเต่า ก้อนโกน 
+                      ก้อนอู้ ก้อนโตน ก้อนนาม ก้อนแซนซัน แซนปลาคบ ฝาหับไก่ ก้อนบรรทม คกอีทิพย์ คอนผีหลง คอนคำ คอนผีแหว่ และยังมีแก่งคอน มีดอนอีกมากมาย ซึ่งแต่ละจุดยังมีประวัติความเป็นมา
+                  </p>
+              </div>
+          </div>
+          <hr>
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-10 text-center">
+                <h4>8. หนองปลาบึก</h4>
+                  <p>
+                      อ่างปลาบึกซึ่งเป็นอ่างขนาดใหญ่ มีปลาบึกเข้าอาศัยและวางไข่ อยู่ติดถนนหมายเลข 0211 มีพื้นที่อาณาเขตกว้างเมตรยาว 600 เมตร ลึก 20 - 40 เมตร อ่างปลาบึกจะเห็นได้ชัดเจนต่อเมื่อน้ำโขงลดปริมาณน้ำลง เมื่อก่อนอ่างปลาบึกจะมีปลาบึกขึ้นมาผสมพันธ์กันหลายคู่แต่ปัจจุบันจำนวนปลาไม่มีใครพบเจอเนื่องจากแม่น้ำโขงมีการเปลี่ยนแปลงไปแต่อ่างปลาบึกก็ยังมีเหมือนเดิมบริเวณอ่างปลาบึกยังมีถ้ำเชื่อมโยงไปยังภูหนองซึ่งเป็นจุดชมวิวทะเลหมอกภูหนองอ่างปลาบึกในปัจจุบันเป็นสถานที่พักชมวิวที่สวยงามเป็นจุดพักรถของผู้เดินทางแวะพักชมบรรยากาศริมโขงถ่ายภาพพันโขดแสนไคร้และนั่งเรือชมพันโขดแสนไคร้
+                  </p>
+              </div>
+          </div>
+          <hr>
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-10 text-center">
+                <h4>9. น้ำตกธารทิพย์</h4>
+                  <p>
+                      ความงดงามของธารน้ำที่ไหลผ่านชั้นหินต่างระดับจากชั้นบนสุดสู่เบื้องล่างเป็นภาพทางธรรมชาติที่น่าหลงใหล ชวนให้ใครต่อใครอยากแวะเวียนไปสัมผัสความฉ่ำเย็นของสายน้ำ และอำเภอประจันตคาม จังหวัดปราจีนบุรีนี้ ก็ขึ้นชื่อว่าเป็นอำเภอที่มีน้ำตกมากที่สุดในประเทศไทย มีน้ำตกน้อยใหญ่ภายในอำเภอถึง 17 แห่งด้วยกันประกอบด้วย น้ำตกตะคร้อ น้ำตกสลัดไดและน้ำตกส้มป่อย ซึ่งต่างก็เป็นน้ำตกขนาดเล็กที่มีความสวยงาม ในขณะที่น้ำตกธารทิพย์ เป็นน้ำตกเล็กๆ ไหลมาตามลานหินผ่านช่องเขาแคบที่ขนาบข้าง ก่อนตกลงจากผาสูงประมาณ 5 เมตร เป็นน้ำตกที่ได้รับความนิยมอีกแห่งหนึ่งของอำเภอประจันตคาม โดยบางช่วงของสายน้ำไหลผ่านลานหินบริเวณกว้างบางช่วงเป็นแอ่งน้ำลึก นักท่องเที่ยวสามารถ ลงเล่นน้ำได้อย่างชุ่มฉ่ำ มีลานหินสำหรับนั่งพักผ่อน ฝั่งซ้ายของลำธารลักษณะค่อนข้างสูงชันสภาพโดยทั่วไปยังเป็นป่าที่คงความอุดมสมบูรณ์ตามธรรมชาติบรรยากาศร่มรื่น เหมาะเป็นสถานที่พักผ่อนหย่อนใจเป็นอย่างดี
+                  </p>
+              </div>
+          </div>
+          <hr>
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-10 text-center">
+                <h4>10. วัดถ้ำผาตากเสื้อ</h4>
+                  <p>
+                      วัดผาตากเสื้อ ที่ตั้งอยู่บนเขาในเขตอำเภอสังคม จังหวัดหนองคาย เดิมชื่อวัดถ้ำพระ หลวงปู่เพชร ปะทีโป ท่านได้เดินทางมาปฏิบัติธรรม บริเวณถ้ำพระและได้ก่อตั้งวัดผาตากเสื้อขึ้น เมื่อปี พ.ศ.2477 มีเนื้อที่ 29 ไร่ 2 งาน 78 ตารางวา วัดผาตากเสื้อเป็นวัดปฏิบัติธรรม ต่อมาได้อัญเชิญพระสารีริกธาตุมาประดิษฐานเมื่อ 2 เมษายน 2550 เป็นที่สักการะของพุทธศาสนิกชนทั่วไป เป็นวัดที่มีทิวทัศน์สวยงาม มาก สูงจากระดับน้ำทะเล 550 เมตร ภายในวัดมีธรรมชาติที่สมบูรณ์ เป็นจุดชมวิวแม่น้ำโขงที่สวยที่สุดแห่งหนึ่ง ในช่วงที่น้ำลดหากไปยืน อยู่บนวัดผาตากเสื้อแล้วมองลงมายังแม่น้ำโขง จะเห็นสันทรายเป็นริ้วคล้ายเกล็ดพญานาคอย่างชัดเจน โดยได้รับการตั้งให้เป็นแหล่ง ท่องเที่ยวเส้นทางในฝัน Dream Destination 2  จาก ท ท ท นั่นก็คือ "เกล็ดพญานาคริมโขง"  ซึ่งเป็นความมหัศจรรย์ที่ธรรมชาติสร้างขึ้น ได้อย่างน่าพิศวง  จากจุดชมวิววัดผาตากเสื้อหากมองไปทางซ้ายมือจะมองเห็นวิวแม่น้ำโขงวาดยาวโค้งเป็นคุ้งน้ำ กลางแม่น้ำมีเกาะ ขนาดใหญ่ ทำให้แม่น้ำโขงช่วงนี้มีลักษณะคล้ายแยกเป็นรูป Y ที่มองเห็นประเทศเพื่อนบ้านได้อย่างชัดเจน
+                  </p>
+              </div>
+          </div>
+          
+
+
+        </div>
+      </div>
+      
 
     <div class="site-section pb-0">
-      <img src="../images/icon/Media/map1.jpg" alt="Image" class="img-fluid">
+      <div class="setpoint2">
+          <a href="#test1" ><img class="point1" id="map2point1" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="200"></a>  
+          <a href="#test1" ><img class="point2" id="map2point2" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="300"></a>  
+          <a href="#test1" ><img class="point3" id="map2point3" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="400"></a>  
+          <a href="#test1" ><img class="point4" id="map2point4" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="500"></a>  
+          <a href="#test1" ><img class="point5" id="map2point5" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="600"></a>  
+          <a href="#test1" ><img class="point6" id="map2point6" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="700"></a>  
+          <a href="#test1" ><img class="point7" id="map2point7" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="800"></a>  
+          <a href="#test1" ><img class="point8" id="map2point8" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="900"></a>  
+          <a href="#test1" ><img class="point9" id="map2point9" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="1000"></a>  
+          <a href="#test1" ><img class="point10" id="map2point10" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="1100"></a>  
+          <a href="#test1" ><img class="point11" id="map2point11" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="1200"></a>  
+          <a href="#test1" ><img class="point12" id="map2point12" src="../images/icon/Media/temp.png" data-aos="fade-down" data-aos-delay="1300"></a>  
+          <img id="map2" src="../images/icon/Media/map2.png" alt="Image" class="img-fluid">    
+      </div>
+    </div>
+
+    <div class="site-section" id=" ">
+      <div class="container mt-5">
+
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-7 text-center">
+            <h2 class="section-title">แผนที่</h2>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <h5>การท่องเที่ยวโดยชุมชนจังหวัดหนองคาย</h5>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h5>การท่องเที่ยวเมืองโบราณตำบลเวียงคุก</h5>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h5>การท่องเที่ยวโดยชุมชนจังหวัดขอนแก่น</h5>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="site-section pb-0">
+      <div class="setpoint3">
+          <a href="#test1" class="nav-link"><img class="point1" id="map3point1" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="200"></a>
+          <a href="#test2" class="nav-link"><img class="point2" id="map3point2" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="400"></a>
+          <a href="#test3" class="nav-link"><img class="point3" id="map3point3" src="../images/icon/Media/point.png" data-aos="fade-down" data-aos-delay="600"></a>
+          <img id="map3"src="../images/icon/Media/map3.png" alt="Image" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="site-section" id=" ">
+      <div class="container mt-5">
+
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-7 text-center" id="test1">
+            <h1 class="">การท่องเที่ยวโดยชุมชนจังหวัดขอนแก่น</h1>
+            <p class="">การท่องเที่ยววิถึวัฒนธรรมข้าวและไหม จังหวัดขอนแก่น ณ บ้านดอนข่า บ้านหวายหลืม
+                และบ้านหนองหญ้าปล้อง โดยมีรายละเอียดดังนี้</p>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-10 text-center">
+              <h4>1. บ้านดอนข่า หมู่ 7 ตำบลชนบท อำเภอชนบท จังหวัดขอนแก่น
+                  “Health and Herbs”</h4>
+                <p> แหล่งเรียนรู้วัฒนธรรมท้องถิ่นในลักษณะสร้างสรรค์ ผ่านกิจกรรมการท่องเที่ยวชุมชน เช่น
+                    มะค่าโมง 9 แผ่นดินที่มีอายุกว่า 200 ปี
+                     บ้านพักโฮมเสตย์ไม้ฟอกอากาศ แห่งเดียวของประเทศ ภายใต้มาตรฐานบ้านพักโฮมเตย์ไทย จาก
+                    กรมการท่องเที่ยวและกีฬา
+                     ผ้าไหมนพเกล้าเฉลิมพระเกียรติ ผ้าไหมมัดหมี่ที่แสดงถึงอัตลักษณ์ท้องถิ่นได้อย่างชัดเจน ผ่านการ
+                    บอกเล่าเรื่องราวบนผืนผ้าไหม
+                     แหล่งกำเนิดภูมิปัญญาท้องถิ่นการฟอกย้อมสีเส้นไหมด้วยน้ำหมักชีวภาพและสมุนไพรพื้นบ้านใน
+                    ลักษณะย้อมเย็น แห่งเดียวของประเทศ ภายใต้มาตรฐานสิ่งทออินทรีย์</p>
+            </div>
+
+            <div class="col-lg-10 text-center mt-5">
+              <hr>
+              <h4 class="mt-5" id="test2">2. บ้านหนองหญ้าปล้อง หมู่ 9 ตำบลโพนเพ็ก อำเภอมัญจาคีรี จังหวัดขอนแก่น
+                  “อีรี่ อีหลี”</h4>
+                <p> วิสาหกิจชุมชนต้นแบบที่มีการเพาะเลี้ยงไหมอีรี่หรือไหมป่า โดยการนำใบมันสำปะหลังที่เหลือ
+                    จากการเกี่ยวผลผลิตนำมาใช้เป็นอาหารแก่หนอนไหม ช่วยเพิ่มรายได้แก่กลุ่มเกษตร
+                     ปัญหาการสาวเส้นใยที่ยาก ชาวบ้านได้ลองผิดลองถูกจนก่อเกิดเป็นภูมิปัญญาการสาวเส้นไหม
+                    ด้วยมือเป็นแห่งแรก
+                     คุณสมบัติพิเศษของไหมอีรี่นุ่ม ผิวเส้นใยไม่สม่ำเสมอ มันแวววาวน้อย ยืดหยุ่นสูง เหนียวคงทน
+                     ผลิตภัณฑ์จากชุมชน เช่น การจักสาน การทอผ้าฝ้ายย้อมสีธรรมชาติและการทำไวน์จากลูกหม่อน</p>
+            </div>
+
+            <div class="col-lg-10 text-center mt-5">
+              <hr>
+              <h4 class="mt-5" id="test3">3. บ้านหวายหลืม หมู่ 10 ตำบลนาข่า อำเภอมัญจาคีรี จังหวัดขอนแก่น
+                  “ท้องทุ่ง เสน่ห์แห่งสีสันบ้านเฮา”</h4>
+                <p>“ใบเสมา” สถาปัตยกรรมโบราณเก่าแก่มีอายุกว่า 200 ปี ที่ยังมีสภาพที่สมบูรณ์ จำนวนนับสิบ
+                    ชิ้น
+                    การสืบสานภูมิปัญญาการปลูกหม่อนเลี้ยงไหมพันธุ์พื้นเมืองและการแปรรูปผลิตภัณฑ์หลากหลาย
+                    ชนิด เช่น สบู่ โลชั่น แชมพู เป็นต้น และเป็นแหล่งเรียนรู้แบบครบวงจร
+                    แหล่งเรียนรู้เกษตรอินทรีย์แบบผสมผสาน ตามหลักเศรษฐกิจพอเพียงอย่างเป็นรูปธรรมเพื่อให้
+                    เกษตรกรสามารถพึ่งพาตนเองได้
+                    วิถีชีวิตการพึ่งพาเกื้อกูลซึ่งกันและกันที่สามารถพบเห็นได้ในชุมชน เช่น การลงแขกทำนาหรือเอา
+                    แฮงทำนาได้ในปัจจุบัน
+                    </p>
+            </div>
+
+        </div>
+      </div>
     </div>
     
 
@@ -113,6 +362,31 @@
 
   
   <script src="js/main.js"></script>
-    
+
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  
+  <script src="js/poptext.js"></script>
+  <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+
+          document.body.scrollTop = document.body.scrollTop - 100;
+          document.documentElement.scrollTop = document.documentElement.scrollTop - 100;
+        
+      }
+      </script>
+
   </body>
 </html>
