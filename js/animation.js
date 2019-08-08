@@ -21,10 +21,4 @@ $(document).ready(function(){
         $iframe.wrap("<div class='class-video'>");
     });
 
-
-    tippy('#myButton', {
-        content: "หนองปลาบึก",
-        theme: 'tomato'
-      })
-
 });

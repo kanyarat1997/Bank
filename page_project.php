@@ -85,56 +85,123 @@
       <div class="container">
         
         <div class="row">
-          <div class="col-md-6 mx-auto text-center section-heading">
-            <h2 class="">โครงการวิจัย สกว.</h2>
-            <h4 class="texttitle"></h4>
+          <div class="col-md-12 mx-auto text-center mb-5 mt-5 section-heading">
+            <h2 class="mb-5" id="nameproject">
+              <?php
+                function createJSON()
+                {
+                  include 'dbconnect.php';
+                  $nameproject = $_GET["nameproject"];
+                  $sql = "SELECT * FROM `data_project` Where name_project = '$nameproject' ";
+                  $query = mysqli_query($conn,$sql);
+                  if (!$query) {
+                    printf("Error: %s\n", $conn->error);
+                    exit();
+                  }
+                  $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
+                  mysqli_close($conn);
+
+                  return json_encode($result);
+                }
+
+                $jsonCode = createJSON();
+                $jsonDecode = json_decode($jsonCode, true);
+
+                echo $jsonDecode['name_project']."<br/>";
+                // echo $jsonDecode['head_project']."<br/>";
+                // echo $jsonDecode['year_project']."<br/>";
+                // echo $jsonDecode['pass_project']."<br/>";
+                // echo $jsonDecode['problem_project']."<br/>";
+                // echo $jsonDecode['object_project']."<br/>";
+                // echo $jsonDecode['result_project']."<br/>";
+                // echo $jsonDecode['result_use_project']."<br/>";
+                // echo $jsonDecode['conclude_project']."<br/>";
+                // echo $jsonDecode['type_project']."<br/>";
+              ?>
+            </h2>
           </div>
         </div>
-
         
-          <div class="row typeProjectBody">
-            
-
-            <!-- <div class="col-md-3 mx-auto text-center mb-3 mt-3 section-heading section-headingedit" data-aos="zoom-in" data-aos-delay="400">
-              <a href="#page2">
-                  <img class="imgeicon" src="images/icon/location.png">
-              </a>
-              <h4 class="mb-3 mt-3">การท่องเที่ยว</h4>
-              
-            </div> -->
-          </div>
-
-        <hr>
-        <!-- เกรษตร -->
-        <div class="ProjectBody">
-            <!-- <div class="row" id="page1">
-              <div class="col-md-6 mx-auto text-center mt-4 section-heading">
-                <h2 class="mb-5">โครงการวิจัยด้านการเกษตร</h2>
-              </div>
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                  <h4 class="mb-3 mt-3">ชื่อโครงการ:</h4>
+                  <p> <?php echo $jsonDecode['name_project']?> </p>
+                </div>
             </div>
-    
-            
-            <div class="row tbodyproject1" data-aos="fade-up" data-aos-duration="1000">  
-                
+
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                    <h4 class="mb-3 mt-3">ประเภทโครงการ:</h4>
+                    <p> <?php echo $jsonDecode['type_project']?> </p>
+                </div>
             </div>
-    
-            <div class="mt-5">
-                <hr>
-            </div> -->
-        </div>
-        <div class="testdata">
 
-        </div>
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                    <h4 class="mb-3 mt-3">ชื่อหัวหน้าทีมวิจัย:</h4>
+                    <p> <?php echo $jsonDecode['head_project']?> </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                    <h4 class="mb-3 mt-3">ปีที่พิมพ์:</h4>
+                    <p> <?php echo $jsonDecode['year_project']?> </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                    <h4 class="mb-3 mt-3">รหัสวิจัย สกว.:</h4>
+                    <p> <?php echo $jsonDecode['pass_project']?> </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                    <h4 class="mb-3 mt-3">ปัญหาการวิจัย:</h4>
+                    <p> <?php echo $jsonDecode['problem_project']?> </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                    <h4 class="mb-3 mt-3">วัตถุประสงค์:</h4>
+                    <p> <?php echo $jsonDecode['object_project']?> </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                    <h4 class="mb-3 mt-3">ผลการวิจัย:</h4>
+                    <p> <?php echo $jsonDecode['result_project']?> </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                    <h4 class="mb-3 mt-3">ผลการวิเคราะห์นำไปใช้ประโยชน์:</h4>
+                    <p> <?php echo $jsonDecode['result_use_project']?> </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                    <h4 class="mb-3 mt-3">สรุปผลจากการสนทนากลุ่ม:</h4>
+                    <p> <?php echo $jsonDecode['conclude_project']?> </p>
+                </div>
+            </div>
+
+
+        </div> 
+
         
-
-        
-
       </div>
-    </div>
+    </div> 
   </div>
 
 
-  <!-- <div class="py-3 quick-contact-info">
+  <div class="py-3 quick-contact-info">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -157,9 +224,11 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
 </div>
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -174,10 +243,11 @@
         <script src="js/aos.js"></script>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="js/mediaelement-and-player.min.js"></script>
 
         <script src="js/main.js"></script>
         <script src="js/animation.js"></script>
-        <script src="BN_project.js"></script>
+        <script src="BN_Page_project.js"></script>
       </body>
       </html>
+
+    

@@ -1304,21 +1304,22 @@ h1, h2, h3, h4, h5,
 }
 
 .tippy-tooltip.tomato-theme {
-  font-size: 16px;
+  font-size: 20px;
   color: #000;
   margin: 20px;
-  width: 500px;
-  height: 60px;
   background-color:#fff;
+  align-items: center !important;
 }
 
 
 .tippy-tooltip.tomato-theme[data-animatefill] {
   background-color: transparent;
+  align-items: center !important;
 }
 
 .tippy-tooltip.tomato-theme .tippy-backdrop {
   background-color: #fff;
+  align-items: center !important;
 }
 
 #myBtn {
@@ -1338,4 +1339,7 @@ h1, h2, h3, h4, h5,
 }
 #myBtn:hover {
   background-color: #555;
+}
+.googleMap a img{
+  width: 6%;
 }

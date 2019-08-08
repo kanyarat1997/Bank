@@ -1,0 +1,5 @@
+var dataproject;
+$( document ).ready(function() {
+    var text = window.location.hash.substring(1);
+    console.log(test);
+});
