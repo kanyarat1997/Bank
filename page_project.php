@@ -90,18 +90,18 @@
               <?php
                 function createJSON()
                 {
-                  include 'dbconnect.php';
-                  $nameproject = $_GET["nameproject"];
-                  $sql = "SELECT * FROM `data_project` Where name_project = '$nameproject' ";
-                  $query = mysqli_query($conn,$sql);
-                  if (!$query) {
-                    printf("Error: %s\n", $conn->error);
-                    exit();
-                  }
-                  $result = mysqli_fetch_array($query,MYSQLI_ASSOC);
-                  mysqli_close($conn);
+                    include 'dbconnect.php';
+                    $nameproject = $_GET["nameproject"];
+                    $sql = "SELECT * FROM `data_project` Where name_project = '$nameproject' ";
+                    $query = mysqli_query($conn, $sql);
+                    if (!$query) {
+                        printf("Error: %s\n", $conn->error);
+                        exit();
+                    }
+                    $result = mysqli_fetch_array($query, MYSQLI_ASSOC);
+                    mysqli_close($conn);
 
-                  return json_encode($result);
+                    return json_encode($result);
                 }
 
                 $jsonCode = createJSON();
@@ -123,72 +123,72 @@
         </div>
         
             <div class="row">
-                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                <div class="col-md-12 mb-3 section-heading section-headingedit">
                   <h4 class="mb-3 mt-3">ชื่อโครงการ:</h4>
-                  <p> <?php echo $jsonDecode['name_project']?> </p>
+                  <p class="ml-5"> <?php echo $jsonDecode['name_project']?> </p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                <div class="col-md-12 mb-3 section-heading section-headingedit">
                     <h4 class="mb-3 mt-3">ประเภทโครงการ:</h4>
-                    <p> <?php echo $jsonDecode['type_project']?> </p>
+                    <p class="ml-5"> <?php echo $jsonDecode['type_project']?> </p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                <div class="col-md-12 mb-3 section-heading section-headingedit">
                     <h4 class="mb-3 mt-3">ชื่อหัวหน้าทีมวิจัย:</h4>
-                    <p> <?php echo $jsonDecode['head_project']?> </p>
+                    <p class="ml-5"> <?php echo $jsonDecode['head_project']?> </p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                <div class="col-md-12 mb-3 section-heading section-headingedit">
                     <h4 class="mb-3 mt-3">ปีที่พิมพ์:</h4>
-                    <p> <?php echo $jsonDecode['year_project']?> </p>
+                    <p class="ml-5"> <?php echo $jsonDecode['year_project']?> </p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                <div class="col-md-12 mb-3 section-heading section-headingedit">
                     <h4 class="mb-3 mt-3">รหัสวิจัย สกว.:</h4>
-                    <p> <?php echo $jsonDecode['pass_project']?> </p>
+                    <p class="ml-5"> <?php echo $jsonDecode['pass_project']?> </p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                <div class="col-md-12 mb-3 section-heading section-headingedit">
                     <h4 class="mb-3 mt-3">ปัญหาการวิจัย:</h4>
-                    <p> <?php echo $jsonDecode['problem_project']?> </p>
+                    <p class="ml-5" > <?php echo $jsonDecode['problem_project']?> </p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                <div class="col-md-12 mb-3 section-heading section-headingedit">
                     <h4 class="mb-3 mt-3">วัตถุประสงค์:</h4>
-                    <p> <?php echo $jsonDecode['object_project']?> </p>
+                    <p class="ml-5"> <?php echo $jsonDecode['object_project']?> </p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                <div class="col-md-12 mb-3 section-heading section-headingedit">
                     <h4 class="mb-3 mt-3">ผลการวิจัย:</h4>
-                    <p> <?php echo $jsonDecode['result_project']?> </p>
+                    <p class="ml-5"> <?php echo $jsonDecode['result_project']?> </p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                <div class="col-md-12 mb-3 section-heading section-headingedit">
                     <h4 class="mb-3 mt-3">ผลการวิเคราะห์นำไปใช้ประโยชน์:</h4>
-                    <p> <?php echo $jsonDecode['result_use_project']?> </p>
+                    <p class="ml-5"> <?php echo $jsonDecode['result_use_project']?> </p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 text-center mb-3 section-heading section-headingedit">
+                <div class="col-md-12 mb-3 section-heading section-headingedit">
                     <h4 class="mb-3 mt-3">สรุปผลจากการสนทนากลุ่ม:</h4>
-                    <p> <?php echo $jsonDecode['conclude_project']?> </p>
+                    <p class="ml-5"> <?php echo $jsonDecode['conclude_project']?> </p>
                 </div>
             </div>
 
@@ -220,7 +220,7 @@
         </div>
         <div class="col-md-4">
           <h2><span class="icon-comments"></span>ต่อต่อ</h2>
-          <p class="mb-0">Email: info@yoursite.com <br> </p>
+          <p class="mb-0">Email: i-corne@it.msuac.th <br> </p>
         </div>
       </div>
     </div>

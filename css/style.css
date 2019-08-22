@@ -6,8 +6,8 @@ body {
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 300;
-  font-size: 15px;
-  font-family: 'Kanit', sans-serif;
+  font-size: 18px !important;
+  font-family: 'Kanit', sans-serif !important;
 }
 
 ::-moz-selection {
@@ -107,6 +107,7 @@ a {
 
 .site-section {
   padding: 3em 0; }
+
   @media (min-width: 768px) {
     .site-section {
       padding: 7em 0; } }
@@ -1458,13 +1459,15 @@ a {
 .calpadding{
   margin-top:0;
 }
+
 .uk-card-default{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
 }
 
 .uk-card-title{
-  font-size: 1.0rem !important;
+  font-size: 1.5rem !important;
 }
+
 .uk-card-default .collapse p , .uk-card-default .collapsing p{
   font-size: 17px;
   font-weight: 200;
@@ -1502,3 +1505,39 @@ a {
 .tippy-tooltip.tomato-theme .tippy-backdrop {
   background-color:rgb(243, 243, 243);
 }
+.font-20{
+  font-size: 1.1rem !important;
+}
+.no-wrap{
+  background: #fff !important;
+  z-index: 99;
+  width: 100%;
+  padding: 10px 0;
+  left: 0;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: rgb(107, 201, 255);
+  color: white;
+  cursor: pointer;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+@media (min-width: 992px) {
+    .col-md-12 {
+      float: inherit !important; 
+    } }

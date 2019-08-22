@@ -62,29 +62,28 @@ $( document ).ready(function() {
     function Load_ProjectBody(data){
             for(var i=0;i < data.length;i++){
                 $('.ProjectBody').append(
-                    '<div class="row" id="page'+(i+1)+'">'+
-                    '<div class="col-md-6 mx-auto text-center mt-4 section-heading">'+
-                        '<h2 class="mb-5">'+data[i].name_TypeProject+'</h2>'+
-                    '</div>'+
-                    '</div>'+
-                    '<div class="row tbodyproject'+(i+1)+'" data-aos="fade-up" data-aos-duration="1000">'+
-                        
-                    '</div>'+
-                    '<div class="mt-5">'+
-                    ' <hr>'+
+                    '<hr id="page'+(i+1)+'">'+
+                    '<div class="row">'+
+                        '<div class="col-md-6 mx-auto text-center mt-4 section-heading">'+
+                            '<h2 class="mb-5">'+data[i].name_TypeProject+'</h2>'+
+                        '</div>'+
+                        '</div>'+
+                        '<div class="row tbodyproject'+(i+1)+'" data-aos="fade-up" data-aos-duration="1000">'+
+                            '</div>'+
+                            '<div class="mt-5">'+
                     '</div>'
                 );
             }
             var dataTypeproject = data;
-
+            
             for(var i=0;i<dataTypeproject.length;i++){
                 for(var j=0 ;j<dataproject.length; j++){
                     if(dataTypeproject[i].name_TypeProject === dataproject[j].type_project){
                         $('.tbodyproject'+(i+1)).append(
-                            '<div class="col-md-4 mt-3">'+
+                            '<div class="col-md-6 mt-3">'+
                                 '<div class="accordion" id="accordionExample">'+
                                     '<div class="uk-card uk-card-default uk-card-body">'+
-                                        '<h3 class="uk-card-title">'+dataproject[j].name_project+'</h3>'+
+                                        '<h3 class="uk-card-title font-20">'+dataproject[j].name_project+'</h3>'+
                                             '<a href="page_project.php?nameproject='+dataproject[j].name_project+'" class="TESTER" >คลิกเพื่อดูรายละเอียด</a>'+
                                     '</div>'+
                                 '</div>'+

@@ -28,9 +28,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/uikit/uikit.min.css">
 
+
 </head>
 <body>
-
+  <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>
   <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -43,7 +44,7 @@
     </div> <!-- .site-mobile-menu -->
     
     
-    <div class="site-navbar-wrap js-site-navbar bg-white">
+    <div class="no-wrap js-site-navbar bg-white">
 
       <div class="container">
         <div class="site-navbar bg-light">
@@ -81,11 +82,11 @@
     </div>
 
     <!-- เนื้อหาหน้าเว็ป -->
-    <div class="site-section">
+    <div class="mt-5">
       <div class="container">
         
         <div class="row">
-          <div class="col-md-6 mx-auto text-center section-heading">
+          <div class="col-md-6 mx-auto text-center mb-5 mt-4 section-heading">
             <h2 class="">โครงการวิจัย สกว.</h2>
             <h4 class="texttitle"></h4>
           </div>
@@ -104,7 +105,7 @@
             </div> -->
           </div>
 
-        <hr>
+        <!-- <hr> -->
         <!-- เกรษตร -->
         <div class="ProjectBody">
             <!-- <div class="row" id="page1">
@@ -153,13 +154,34 @@
         </div>
         <div class="col-md-4">
           <h2><span class="icon-comments"></span>ต่อต่อ</h2>
-          <p class="mb-0">Email: info@yoursite.com <br> </p>
+          <p class="mb-0">Email: i-corne@it.msuac.th <br> </p>
         </div>
       </div>
     </div>
   </div> -->
 
 </div>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+    
+  }
+  </script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/jquery-migrate-3.0.1.min.js"></script>

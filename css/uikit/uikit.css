@@ -2902,7 +2902,7 @@ select.uk-form-width-xsmall {
 /* Title
  ========================================================================== */
 .uk-card-title {
-  font-size: 1.5rem;
+  font-size: 1.5rem; 
   line-height: 1.4;
 }
 /* Badge
